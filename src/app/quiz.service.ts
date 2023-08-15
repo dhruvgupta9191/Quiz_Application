@@ -60,7 +60,7 @@ export class QuizService {
   } */
 
   getquizarray(){
-    return(['math','cse']);
+    return(['math','cse','dsa']);
   }
 
   /* setfinal(quizname:string){
