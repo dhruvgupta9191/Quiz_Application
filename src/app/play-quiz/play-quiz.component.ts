@@ -70,9 +70,11 @@ export class PlayQuizComponent implements OnInit {
     }
 
   }
+
   checkgrades(){
     this.disp=true
   }
+  
   redirection(){
     this.router.navigate(['/student'])
   }
