@@ -1,0 +1,43 @@
+<body>
+    <mat-card class="qname">
+        <mat-card-content>
+            <br>
+            <div *ngIf="nam==''">
+                <label>Enter Subject name</label><br><br>
+                <input type="text" #quizname>
+            </div>
+            <div *ngIf="nam!=''" class="align">{{nam}}</div>
+            <br>
+        </mat-card-content>
+        
+    </mat-card>
+    <div class="space"></div>
+    <mat-card class="form">
+        <mat-card-content>
+            <form (ngSubmit)="onNext()" #f="ngForm" *ngIf="num<2">
+                <br>
+                <label for="quest">Enter Question {{num}}</label><br>
+                <input type="text" ngModel name="quest"><br><br>
+                <!-- <label for="opt1">Enter option 1</label><br>
+                <input type="text" ngModel name="opt1"><br><br>
+                <label for="opt2">Enter option 2</label><br>
+                <input type="text" ngModel name="opt2"><br><br>
+                <label for="opt3">Enter option 3</label><br>
+                <input type="text" ngModel name="opt3"><br><br>
+                <label for="opt4">Enter option 4</label><br>
+                <input type="text" ngModel name="opt4"><br><br> -->
+                <label for="correctopt">Enter correct Answer</label><br>
+                <input type="text" ngModel name="correctopt"><br><br>
+                <label for="grade">Enter Grade</label><br>
+                <input type="text" ngModel name="grade"><br><br>
+            
+            <button type="submit">Next Question</button><br>
+            </form>
+            
+            <div *ngIf="num==2" class="padd">
+                Cannot enter more question<br><br>
+                <button (click)="onFinish()">Finish</button><br>
+            </div>
+        </mat-card-content>   
+    </mat-card>  
+</body>

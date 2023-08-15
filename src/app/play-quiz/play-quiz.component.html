@@ -1,0 +1,52 @@
+<form  #fo="ngForm" >
+<div *ngFor="let entry of total; index as i">
+    <mat-card fxLayout="column">
+       <div class="align">Q-{{i+1}} {{entry.question}}</div> 
+    <br>
+    <mat-card-content>
+        <div>
+            <label for="ans">Enter  Answer</label><br>
+            <input type="text" ngModel name="ans"><br><br>
+            <!-- <input type="text" name="app" [(ngModel)]="ans"> -->
+            <button (click)="checkAns(entry.answer,entry.grade)"> Enter </button>
+            
+            
+            <!-- <div fxLayout="row">
+                
+                <input type="radio" id="html" name="language" value="HTML" (click)="checkAns(i,0)" >
+                <label for="html">{{entry[1][0]}}</label><br>
+                <br>
+               
+                <input type="radio" id="html" name="fav_language" value="HTML" (click)="checkAns(i,1)" >
+                <label for="html">{{entry[1][1]}}</label><br>
+                <br>
+            </div>
+            <div fxLayout="row">
+               
+                <input type="radio" id="html" name="v_language" value="HTML" (click)="checkAns(i,2)" >
+                <label for="html">{{entry[1][2]}}</label><br>
+                <br>
+                
+                <input type="radio" id="html" name="fav_lauage" value="HTML" (click)="checkAns(i,3)" >
+                <label for="html">{{entry[1][3]}}</label><br>
+            </div> -->
+        
+        </div>
+    </mat-card-content>
+    
+    </mat-card>
+    
+</div>
+</form>
+<mat-card>
+    <mat-card-content >
+        <button style="margin-left: 10rem;" (click)="checkgrades()"> Click to see grades </button>
+<div *ngIf="disp==true">
+    <div *ngFor="let i of grade;index as j">{{j+"-"+i}}</div></div><br>
+    </mat-card-content>
+</mat-card>
+<div class="redirect">
+    <button (click)="redirection()">Go Back</button>
+</div>
+
+

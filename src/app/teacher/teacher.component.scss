@@ -1,0 +1,33 @@
+.create{
+    background-color:  lightblue;
+}
+.show{
+    background-color: lightblue;
+}
+.space{
+    padding-top: 20px;
+}
+.create:hover,.show:hover{
+    transform: scale(1.09);
+  box-shadow: 0 10px 20px rgba(72, 68, 68, 0.12), 0 4px 8px rgba(82, 77, 77, 0.06);
+}
+.mat-mdc-card {
+    position: relative;
+    width: 27rem;
+    height: 14rem;
+    margin-left: 24rem;
+    margin-top: 7rem;
+}
+.mat-mdc-card-content {
+    display: block ;
+    font-style: oblique;
+    font-size: xx-large;
+    padding: 82px 95px !important;
+}
+body{
+    background-color: cadetblue;;
+    height: 36rem;
+}
+.button{
+    cursor:pointer;
+}

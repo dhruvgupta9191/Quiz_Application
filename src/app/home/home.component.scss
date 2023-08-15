@@ -1,0 +1,41 @@
+.student_card{
+    background-color: #bed4ba;
+    margin-top:15rem;
+    margin-left: 14rem;
+    margin-bottom: 171px;
+}
+
+.student_card:hover,.teachers_card:hover{
+    transform: scale(1.09);
+  box-shadow: 0 10px 20px rgba(72, 68, 68, 0.12), 0 4px 8px rgba(82, 77, 77, 0.06);
+}
+
+.teachers_card{
+    background-color: #bed4ba;
+    margin-top: 15rem;
+}
+
+.space{
+    padding-left: 20px;
+}
+.not_disp{
+    display: none !important;
+}
+.button{
+    cursor:pointer;
+}
+.mat-mdc-card {
+    position: relative;
+    width: 398px !important;
+    height: 196px !important;
+}
+.mat-mdc-card-content {
+    font-size: xx-large !important;
+    font-style: oblique !important;
+    letter-spacing: 2px !important;
+    display: block;
+    padding: 77px 76px !important;
+}
+body{
+    background-color: cadetblue;
+}

@@ -1,0 +1,17 @@
+<body>
+    <div class="align">Select the quiz you want to attempt</div>
+<div class="space"></div>
+
+<div fxLayout="row" class="wrap">
+<div *ngFor="let quiz of quizez; index as i">
+    
+    <mat-card>
+         <mat-card-content>
+            <div [routerLink]="['/student',i+1]">{{quiz}}</div>
+        </mat-card-content> 
+    </mat-card>
+
+</div>
+</div>
+</body>
+

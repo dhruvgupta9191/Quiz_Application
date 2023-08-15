@@ -1,0 +1,35 @@
+.mat-mdc-card {
+    position: relative;
+    background-color: antiquewhite;
+    margin-top: 3rem;
+    width: 35rem;
+    height: 8rem;
+    margin-left: 21rem;
+    font-size: larger;
+}
+
+.mat-mdc-card-content {
+    display: block;
+    padding: 8px 48px;
+    background-color:cadetblue;
+    height: 32rem;
+}
+.set{
+    cursor: pointer;
+    margin-inline: auto;
+    margin-top: 1rem;
+    font-size: larger;
+}
+.align{
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+label{
+    margin-top:10px;
+    cursor: pointer;
+    margin-inline: auto;
+}
+.redirect{
+    margin-left: 38rem;
+    margin-top: 2rem;
+}
